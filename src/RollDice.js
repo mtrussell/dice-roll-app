@@ -28,11 +28,13 @@ class RollDice extends Component {
       Math.floor(Math.random() * this.props.sides.length)
     ];
 
-    this.setState({
-      die1: newDie1, 
-      die2: newDie2, 
-      rolling: true,
-      rolls: [...this.state.rolls, {first: newDie1, second: newDie2}] 
+    this.setState(st => {
+      return {
+        die1: newDie1, 
+        die2: newDie2, 
+        rolling: true,
+        rolls: [...st.rolls, {first: newDie1, second: newDie2}] 
+      }     
     });
 
     setTimeout(() => {
