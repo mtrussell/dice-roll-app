@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import './PrevRolls.css'
 
 class PrevRolls extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.displayRolls = this.displayRolls.bind(this);
   }
-  
-  // reversedRolls = this.props.rolls.reverse();
 
   reverseRolls() {
     return this.props.rolls.reverse();

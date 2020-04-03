@@ -45,7 +45,7 @@ class RollDice extends Component {
           <Die face={this.state.die2} rolling={this.state.rolling} />
         </div>
         <button onClick={this.roll} disabled={this.state.rolling}>{rollButton}</button>
-        <PrevRolls rolls={this.state.rolls.reverse()} />
+        <PrevRolls rolls={this.state.rolls} />
       </div>
     );
   }
