@@ -1,0 +1,11 @@
+.PrevRolls {
+  display: flex;
+  justify-content: center;
+}
+
+.PrevRolls-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 15rem;
+  width: 50rem;
+}
