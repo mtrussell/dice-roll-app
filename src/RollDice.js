@@ -46,7 +46,6 @@ class RollDice extends Component {
         </div>
         <button onClick={this.roll} disabled={this.state.rolling}>{rollButton}</button>
         <PrevRolls rolls={this.state.rolls} />
-        {/* previous rolls component - roll 1 [3, 1], roll 2 [6, 2], roll 3 [5, 3], etc */}
       </div>
     );
   }
