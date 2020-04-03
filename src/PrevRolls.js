@@ -3,8 +3,8 @@ import './PrevRolls.css'
 
 class PrevRolls extends Component {
   render() {
-    const dieClass = `Die fas fa-dice-`;
-    const previousRolls = this.props.rolls.reverse().map((roll, index) => (
+    const reversedRolls = this.props.rolls.reverse();
+    const previousRolls = reversedRolls.map((roll, index) => (
       <p>
         Roll {this.props.rolls.length - index} <i className={`fas fa-dice-${roll.first}`} ></i> <i className={`fas fa-dice-${roll.second}`} ></i>
       </p>
