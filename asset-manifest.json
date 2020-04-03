@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dice-roll-app/static/css/main.96acc84e.chunk.css",
+    "main.js": "/dice-roll-app/static/js/main.13134a9d.chunk.js",
+    "main.js.map": "/dice-roll-app/static/js/main.13134a9d.chunk.js.map",
+    "runtime-main.js": "/dice-roll-app/static/js/runtime-main.c083b691.js",
+    "runtime-main.js.map": "/dice-roll-app/static/js/runtime-main.c083b691.js.map",
+    "static/js/2.461ed8ca.chunk.js": "/dice-roll-app/static/js/2.461ed8ca.chunk.js",
+    "static/js/2.461ed8ca.chunk.js.map": "/dice-roll-app/static/js/2.461ed8ca.chunk.js.map",
+    "index.html": "/dice-roll-app/index.html",
+    "precache-manifest.cd1b1185e1061c56727e92393d873268.js": "/dice-roll-app/precache-manifest.cd1b1185e1061c56727e92393d873268.js",
+    "service-worker.js": "/dice-roll-app/service-worker.js",
+    "static/css/main.96acc84e.chunk.css.map": "/dice-roll-app/static/css/main.96acc84e.chunk.css.map",
+    "static/js/2.461ed8ca.chunk.js.LICENSE.txt": "/dice-roll-app/static/js/2.461ed8ca.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/dice-roll-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c083b691.js",
+    "static/js/2.461ed8ca.chunk.js",
+    "static/css/main.96acc84e.chunk.css",
+    "static/js/main.13134a9d.chunk.js"
+  ]
+}
