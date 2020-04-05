@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/dice-roll-app/static/css/main.96acc84e.chunk.css",
-    "main.js": "/dice-roll-app/static/js/main.5bd106ee.chunk.js",
-    "main.js.map": "/dice-roll-app/static/js/main.5bd106ee.chunk.js.map",
+    "main.css": "/dice-roll-app/static/css/main.e4b2c2db.chunk.css",
+    "main.js": "/dice-roll-app/static/js/main.06fc0d4e.chunk.js",
+    "main.js.map": "/dice-roll-app/static/js/main.06fc0d4e.chunk.js.map",
     "runtime-main.js": "/dice-roll-app/static/js/runtime-main.c083b691.js",
     "runtime-main.js.map": "/dice-roll-app/static/js/runtime-main.c083b691.js.map",
-    "static/js/2.81c8b0fe.chunk.js": "/dice-roll-app/static/js/2.81c8b0fe.chunk.js",
-    "static/js/2.81c8b0fe.chunk.js.map": "/dice-roll-app/static/js/2.81c8b0fe.chunk.js.map",
+    "static/js/2.8485dc87.chunk.js": "/dice-roll-app/static/js/2.8485dc87.chunk.js",
+    "static/js/2.8485dc87.chunk.js.map": "/dice-roll-app/static/js/2.8485dc87.chunk.js.map",
     "index.html": "/dice-roll-app/index.html",
-    "precache-manifest.fc26843d633dc2a34d818432dae14389.js": "/dice-roll-app/precache-manifest.fc26843d633dc2a34d818432dae14389.js",
+    "precache-manifest.56cd8049205da8f297bb0944a8c1f4f3.js": "/dice-roll-app/precache-manifest.56cd8049205da8f297bb0944a8c1f4f3.js",
     "service-worker.js": "/dice-roll-app/service-worker.js",
-    "static/css/main.96acc84e.chunk.css.map": "/dice-roll-app/static/css/main.96acc84e.chunk.css.map",
-    "static/js/2.81c8b0fe.chunk.js.LICENSE.txt": "/dice-roll-app/static/js/2.81c8b0fe.chunk.js.LICENSE.txt"
+    "static/css/main.e4b2c2db.chunk.css.map": "/dice-roll-app/static/css/main.e4b2c2db.chunk.css.map",
+    "static/js/2.8485dc87.chunk.js.LICENSE.txt": "/dice-roll-app/static/js/2.8485dc87.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c083b691.js",
-    "static/js/2.81c8b0fe.chunk.js",
-    "static/css/main.96acc84e.chunk.css",
-    "static/js/main.5bd106ee.chunk.js"
+    "static/js/2.8485dc87.chunk.js",
+    "static/css/main.e4b2c2db.chunk.css",
+    "static/js/main.06fc0d4e.chunk.js"
   ]
 }
