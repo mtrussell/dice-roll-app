@@ -17,6 +17,7 @@ class RollDice extends Component {
       rolls: []
     }
     this.handleClick = this.handleClick.bind(this);
+    this.clearRolls = this.clearRolls.bind(this);
   }
 
   randomDice() {
@@ -50,6 +51,10 @@ class RollDice extends Component {
     }, 1000);
   }
 
+  clearRolls() {
+    this.setState({ rolls: [] });
+  }
+
   render() {
     let rollButton = this.state.rolling ? 'Rolling...' : 'Roll Dice!';
 
@@ -61,6 +66,7 @@ class RollDice extends Component {
         </div>
         <button onClick={this.handleClick} disabled={this.state.rolling}>{rollButton}</button>
         <PrevRolls rolls={this.state.rolls} />
+        {this.state.rolls.length > 0 ? <button className='clear' onClick={this.clearRolls}>Clear</button> : ''}
       </div>
     );
   }

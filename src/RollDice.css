@@ -27,3 +27,8 @@
   color: #282B28;
   cursor: pointer;
 }
+
+.RollDice button.clear {
+  margin-top: -1.5em;
+  padding: 10px;
+}
