@@ -19,23 +19,25 @@ class RollDice extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  roll() {
-    let newDie1 = this.props.sides[
+  randomDice() {
+    const newDie1 = this.props.sides[
       Math.floor(Math.random() * this.props.sides.length)
     ];
-    
-    let newDie2 = this.props.sides[
+    const newDie2 = this.props.sides[
       Math.floor(Math.random() * this.props.sides.length)
     ];
+    const dice = [newDie1, newDie2];
+    return dice;
+  }
 
+  roll(dice) {
     this.setState(prevState => {
       return {
-        die1: newDie1, 
-        die2: newDie2, 
+        die1: dice[0], 
+        die2: dice[1], 
         rolling: true 
       }     
     });
-
     setTimeout(() => {
       this.setState({
         rolling: false,
@@ -43,20 +45,20 @@ class RollDice extends Component {
     }, 1000);
   }
 
-  rollsList() {
+  rollsList(dice) {
     this.setState(prevState => {
       return{
-        rolls: [...prevState.rolls, {first: this.state.die1, second: this.state.die2}]
+        rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
       }
     });
   }
 
   handleClick() {
-    this.roll();
+    const dice = this.randomDice();
+    this.roll(dice);
     setTimeout(() => {
-      this.rollsList();
+      this.rollsList(dice);
     }, 1000);
-    
   }
 
 
