@@ -35,7 +35,7 @@ class RollDice extends Component {
         die1: dice[0], 
         die2: dice[1], 
         rolling: true,
-        rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
+        rolls: [{first: dice[0], second: dice[1]}, ...prevState.rolls]
       }     
     });
   }
