@@ -26,37 +26,43 @@ class RollDice extends Component {
     const newDie2 = this.props.sides[
       Math.floor(Math.random() * this.props.sides.length)
     ];
-    const dice = [newDie1, newDie2];
-    return dice;
+    return [newDie1, newDie2];
   }
+
+  // roll(dice) {
+  //   this.setState(prevState => {
+  //     return {
+  //       die1: dice[0], 
+  //       die2: dice[1], 
+  //       rolling: true,
+  //       rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
+  //     }     
+  //   });
+  // }
 
   roll(dice) {
     this.setState(prevState => {
       return {
         die1: dice[0], 
-        die2: dice[1], 
-        rolling: true,
+        die2: dice[1],
         rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
       }     
     });
   }
 
-  // rollsList(dice) {
-  //   this.setState(prevState => {
-  //     return{
-  //       rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
-  //     }
-  //   });
+  // handleClick() {
+  //   const dice = this.randomDice();
+  //   this.roll(dice);
+  //   setTimeout(() => {
+  //     this.setState({
+  //       rolling: false,
+  //     });
+  //   }, 1000);
   // }
 
   handleClick() {
     const dice = this.randomDice();
     this.roll(dice);
-    setTimeout(() => {
-      this.setState({
-        rolling: false,
-      });
-    }, 1000);
   }
 
 
@@ -69,7 +75,8 @@ class RollDice extends Component {
           <Die face={this.state.die1} rolling={this.state.rolling} />
           <Die face={this.state.die2} rolling={this.state.rolling} />
         </div>
-        <button onClick={this.handleClick} disabled={this.state.rolling}>{rollButton}</button>
+        {/* <button onClick={this.handleClick} disabled={this.state.rolling}>{rollButton}</button> */}
+        <button onClick={this.handleClick} >{rollButton}</button>
         <PrevRolls rolls={this.state.rolls} />
       </div>
     );
