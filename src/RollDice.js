@@ -53,7 +53,10 @@ class RollDice extends Component {
 
   handleClick() {
     this.roll();
-    this.rollsList();
+    setTimeout(() => {
+      this.rollsList();
+    }, 1000);
+    
   }
 
 
