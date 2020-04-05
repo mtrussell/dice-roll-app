@@ -35,29 +35,27 @@ class RollDice extends Component {
       return {
         die1: dice[0], 
         die2: dice[1], 
-        rolling: true 
+        rolling: true,
+        rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
       }     
     });
-    setTimeout(() => {
-      this.setState({
-        rolling: false,
-      });
-    }, 1000);
   }
 
-  rollsList(dice) {
-    this.setState(prevState => {
-      return{
-        rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
-      }
-    });
-  }
+  // rollsList(dice) {
+  //   this.setState(prevState => {
+  //     return{
+  //       rolls: [...prevState.rolls, {first: dice[0], second: dice[1]}]
+  //     }
+  //   });
+  // }
 
   handleClick() {
     const dice = this.randomDice();
     this.roll(dice);
     setTimeout(() => {
-      this.rollsList(dice);
+      this.setState({
+        rolling: false,
+      });
     }, 1000);
   }
 
